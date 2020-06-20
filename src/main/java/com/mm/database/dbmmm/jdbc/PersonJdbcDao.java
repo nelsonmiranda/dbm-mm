@@ -9,6 +9,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import com.mm.database.dbmmm.entity.Person;
+import com.mm.database.dbmmm.entity.mapper.PersonRowMapper;
 
 @Repository
 public class PersonJdbcDao {
@@ -19,7 +20,7 @@ public class PersonJdbcDao {
 	//select * from person
 	public List<Person> findAll(){
 		return jdbcTemplate.query("select * from person", 
-				new BeanPropertyRowMapper<Person>(Person.class));
+				new PersonRowMapper());
 	}
 	
 	//select * from person where id=?

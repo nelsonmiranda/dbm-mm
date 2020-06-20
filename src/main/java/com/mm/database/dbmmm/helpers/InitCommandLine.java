@@ -22,6 +22,8 @@ public class InitCommandLine implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		Thread.sleep(5000);
+		logger.info("*********************findAll**************************");
+		logger.info("User -> {}", dao.findAll());
 		logger.info("*********************findById 1001**************************");
 		logger.info("User -> {}", dao.findById(1001));
 		logger.info("*********************findByName 1001**************************");
