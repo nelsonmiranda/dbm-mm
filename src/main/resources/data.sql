@@ -1,3 +1,4 @@
+/*
 create table person
 (
 	id integer not null,
@@ -14,4 +15,15 @@ insert into person(id,name,location,birthDate)
 values (1002,'Natalia Miranda', 'San Salvador', sysdate());
 
 insert into person(id,name,location,birthDate)
+values (1003,'Ricardo Miranda', 'San Salvador', sysdate());
+
+*/
+
+insert into person(id,name,location,birth_date)
+values (1001,'Nelson Miranda', 'San Salvador', sysdate());
+
+insert into person(id,name,location,birth_date)
+values (1002,'Natalia Miranda', 'San Salvador', sysdate());
+
+insert into person(id,name,location,birth_date)
 values (1003,'Ricardo Miranda', 'San Salvador', sysdate());
