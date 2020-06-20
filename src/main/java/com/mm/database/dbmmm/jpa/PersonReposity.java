@@ -7,11 +7,9 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import javax.transaction.Transactional;
 
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.stereotype.Repository;
 
 import com.mm.database.dbmmm.entity.Person;
-import com.mm.database.dbmmm.entity.mapper.PersonRowMapper;
 
 @Repository
 @Transactional
